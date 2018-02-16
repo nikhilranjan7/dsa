@@ -4,7 +4,7 @@ struct multiQ{
   Queue *q;
   int size;
 };
-typedef multiQ MultiQ;
+typedef struct multiQ* MultiQ;
 
 MultiQ createMQ(int num);
 
@@ -14,7 +14,7 @@ Task nextMQ(MultiQ mq);
 
 MultiQ delNextMQ(MultiQ mq);
 
-Task isEmptyQ(MultiQ mq);
+int isEmptyMQ(MultiQ mq);
 
 int sizeMQ(MultiQ mq);
 
