@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Lab_2.dir/driver.c.o CMakeFiles/Lab_2.dir/file.c.o CMakeFiles/Lab_2.dir/multiq.c.o CMakeFiles/Lab_2.dir/que.c.o  -o Lab_2 

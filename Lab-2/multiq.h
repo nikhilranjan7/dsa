@@ -1,7 +1,7 @@
 typedef Element Task;
 
 struct multiQ{
-  Queue *q;
+  Queue q;
   int size;
 };
 typedef struct multiQ* MultiQ;
@@ -21,3 +21,5 @@ int sizeMQ(MultiQ mq);
 int sizeMQbyPriority(MultiQ mq, int p);
 
 Queue getQueueFromMQ(MultiQ, int p);
+
+void printq(MultiQ mq);

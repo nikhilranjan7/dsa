@@ -3,23 +3,18 @@
 #include "que.h"
 #include "multiq.h"
 
-MultiQ loadData(File* f){
+MultiQ loadData(FILE* f){
   int t, p;
-  MultiQ mq = createMQ(10);
+  MultiQ mq = createMQ(11);
 	f = fopen("input10.txt", "r");
-  /*
-	Element *data;
-	data = (Element*)malloc(2000*sizeof(Element));
-	int j = 0;
-  */
+
 	while (!feof(f))
 	{
 		fscanf(f, "%d,%d", &t,&p);
     Element e = newElement(t, p);
     mq = addMQ(mq, e);
 	}
-	fclose(fp);
-
+	fclose(f);
   return mq;
 }
 
@@ -28,21 +23,5 @@ MultiQ testDel(MultiQ mq, int num){
   for(i=0;i<num;i++){
     mq = delNextMQ(mq);
   }
-}
-
-int main(){
-	FILE *fp;
-	int t, p;
-	fp = fopen("input10.txt", "r");
-  /*
-	Element *data;
-	data = (Element*)malloc(2000*sizeof(Element));
-	int j = 0;
-  */
-	while (!feof(fp))
-	{
-		fscanf(fp, "%d,%d", &t,&p);
-    printf("%d, %d\n", t,p);
-	}
-	fclose(fp);
+  return mq;
 }
