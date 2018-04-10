@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/file.c
+stdio.h
+-
+stdlib.h
+-
+implement.h
+/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/implement.h
+
+/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/implement.c
+stdio.h
+-
+stdlib.h
+-
+implement.h
+/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/implement.h
+
+/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/implement.h
+
+/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/use.c
+stdio.h
+-
+stdlib.h
+-
+sys/time.h
+-
+implement.h
+/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/implement.h
+

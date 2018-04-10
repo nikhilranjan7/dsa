@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Lab_6"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab_6">
+				<Option output="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Lab_6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab_6"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab_6/fast">
+				<Option output="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Lab_6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab_6/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/a.sh">
+			<Option target="Lab_6"/>
+		</Unit>
+		<Unit filename="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/data.txt">
+			<Option target="Lab_6"/>
+		</Unit>
+		<Unit filename="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/file.c">
+			<Option target="Lab_6"/>
+		</Unit>
+		<Unit filename="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/implement.c">
+			<Option target="Lab_6"/>
+		</Unit>
+		<Unit filename="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/implement.h">
+			<Option target="Lab_6"/>
+		</Unit>
+		<Unit filename="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/makefile">
+			<Option target="Lab_6"/>
+		</Unit>
+		<Unit filename="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/use.c">
+			<Option target="Lab_6"/>
+		</Unit>
+		<Unit filename="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/use.h">
+			<Option target="Lab_6"/>
+		</Unit>
+		<Unit filename="/Users/nikhilranjan/Desktop/3-2/DSA/Lab/Lab-6/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
