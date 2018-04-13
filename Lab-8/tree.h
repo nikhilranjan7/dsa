@@ -9,7 +9,7 @@ struct tree_node
   tree left;
   tree right;
   int h_info;
-}
+};
 
 tree createTree(int v);
 tree add(tree t, int v);
