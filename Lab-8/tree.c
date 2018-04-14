@@ -6,32 +6,59 @@ tree createTree(int v)
   t->value = v;
   t->left = NULL;
   t->right = NULL;
-  t->h_info = 0;
+  t->height = 0;
 
   return t;
 }
 
 
 
-tree add(tree t, int v)
+tree add(tree root, tree t, int v)
 {
     tree a = t;
+    tree x, y, z;
     if(t->value > v)
     {
       if(t->left == NULL)
+      {
         t->left = createTree(v);
+
+        y = t;
+        x = t->left;
+        z = return_parent(root,y);
+        if(z->value != y->value)
+        {
+          if(getBalance(z) > 1 || getBalance(z) < -1)
+            {printf("\n\nInsideL\n\n");
+            root = rotate(root, x, y, z);}
+        }
+      }
       else
-        t = add(t->left, v);
+        t = add(root, t->left, v);
     }
     else
     {
       if(t->right == NULL)
+      {
         t->right = createTree(v);
+
+        y = t;
+        x = t->right;
+        z = return_parent(root,y);
+        printf("X= %d Y=%d Z=%d\n", x->value, y->value, z->value);
+        if(z->value != y->value)
+        {
+          if(getBalance(z) > 1 || getBalance(z) < -1)
+            {printf("\n\nInsideR & Point of imbalance is %d\n\n",z->value);
+            print2D(z);
+            root = rotate(root, x, y, z);}
+        }
+      }
       else
-        t = add(t->right, v);
+        t = add(root, t->right, v);
     }
 
-    return a;
+    return root;
 }
 
 tree find(tree t, int v)
@@ -102,6 +129,7 @@ void print_dfs(tree t)
   {
     print_dfs(t->left);
     printf("%d->",t->value);
+    t->height = height(t);
     print_dfs(t->right);
   }
 }
@@ -127,6 +155,94 @@ tree return_parent(tree root, tree child)
     if(a->value <= child->value) return return_parent(a->right, child);
   }
   return NULL;
+}
+
+tree rotate(tree root, tree X, tree Y, tree Z)
+{
+    tree a, b, c, T0, T1, T2, T3;
+    if(Z->left == Y)
+	  {
+  		if(Y->left == X) // X=a, Y=b, Z=c
+  		{
+  			a = X;
+  			b = Y;
+  			c = Z;
+  			T0 = X->left;
+  			T1 = X->right;
+  			T2 = Y->right;
+  			T3 = Z->right;
+
+  		}
+  		else // X=b, Y=a, Z=c
+  		{
+  			a = Y;
+  			b = X;
+  			c = Z;
+  			T0 = Y->left;
+  			T1 = X->left;
+  			T2 = X->right;
+  			T3 = Z->right;
+  		}
+	  }
+	else
+	{
+		if(Y->right == X) // X=c, Y=b, Z=a
+		{
+			a = Z;
+			b = Y;
+			c = X;
+			T0 = Z->left;
+			T1 = Y->left;
+			T2 = X->left;
+			T3 = X->right;
+		}
+		else // X=b, Y=c, Z=a
+		{
+			a = Z;
+			b = X;
+			c = Y;
+			T0 = Z->left;
+			T1 = X->left;
+			T2 = X->right;
+			T3 = Y->right;
+		}
+	}
+
+  tree p = return_parent(root,Z);
+  if(p->value == Z->value)
+  {
+    root = b;
+  }
+  else
+  {
+    if(p->left == Z)  p->left = b;
+    else  p->right = b;
+  }
+  b->left = a;
+  a->left = T0;
+  a->right = T1;
+  b->right = c;
+  c->left = T2;
+  c->right = T3;
+
+  return root;
+}
+
+int height(tree root)
+{
+  if (root==NULL)
+       return 0;
+   else
+   {
+       /* compute the depth of each subtree */
+       int lDepth = height(root->left);
+       int rDepth = height(root->right);
+
+       /* use the larger one */
+       if (lDepth > rDepth)
+           return(lDepth+1);
+       else return(rDepth+1);
+   }
 }
 
 tree inOrderSuccessor(tree root, tree n)
@@ -186,4 +302,9 @@ void print2D(Node *root)
 {
    // Pass initial space count as 0
    print2DUtil(root, 0);
+}
+
+int getBalance(tree t)
+{
+    return(height(t->right)-height(t->left));
 }
